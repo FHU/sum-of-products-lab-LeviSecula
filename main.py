@@ -11,8 +11,10 @@ def sum_of_products(list1, list2):
 if __name__ == '__main__':
     User1 = input()
     User2 = input()
-    list1 = [int(x) for x in str(User1)]
-    list2 = [int(x) for x in str(User2)]
+    UserA = User1.replace(" ","")
+    UserB = User2.replace(" ","")
+    list1 = [int(x) for x in str(UserA)]
+    list2 = [int(x) for x in str(UserB)]
 
     result = sum_of_products(list1, list2)
     print(result)
