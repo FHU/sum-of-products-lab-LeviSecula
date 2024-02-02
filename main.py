@@ -1,11 +1,15 @@
 #REMOVE PASS AND FIX THE FUNCTION
 #change to test push and forks
 def sum_of_products(list1, list2):
-    Sum1 = list1[0] * list2[0]
-    Sum2 = list1[1] * list2[1]
-    Sum3 = list1[2] * list2[2]
-    FinalSum = Sum1 + Sum2 + Sum3
-    return FinalSum
+    if len(list1) == len(list2):
+        total = 0
+        for i in range(len(list1)):
+            total = total + (list1[i] * list2[i])
+            i += 1
+        print(total)
+    
+    else:
+        print("error")
 
 
 if __name__ == '__main__':
@@ -17,4 +21,3 @@ if __name__ == '__main__':
     list2 = [int(x) for x in str(UserB)]
 
     result = sum_of_products(list1, list2)
-    print(result)
