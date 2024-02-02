@@ -6,18 +6,17 @@ def sum_of_products(list1, list2):
         for i in range(len(list1)):
             total = total + (list1[i] * list2[i])
             i += 1
-        print(total)
+        return(total)
     
     else:
-        print("error")
+        return("error")
 
 
 if __name__ == '__main__':
-    User1 = input()
-    User2 = input()
-    UserA = User1.replace(" ","")
-    UserB = User2.replace(" ","")
-    list1 = [int(x) for x in str(UserA)]
-    list2 = [int(x) for x in str(UserB)]
+    User1 = input().split()
+    User2 = input().split()
+    list1 = [int(x) for x in User1]
+    list2 = [int(x) for x in User2]
 
     result = sum_of_products(list1, list2)
+    print(result)
