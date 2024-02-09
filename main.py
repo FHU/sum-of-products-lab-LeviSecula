@@ -1,4 +1,4 @@
-#REMOVE PASS AND FIX THE FUNCTION
+#please work
 #change to test push and forks
 def sum_of_products(list1, list2):
     if len(list1) == len(list2):
